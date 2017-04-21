@@ -1,1 +1,2 @@
-Koş Bakalım Android and Wear App
+Koş Bakalım Android and Wear App |
+----------------------------------
