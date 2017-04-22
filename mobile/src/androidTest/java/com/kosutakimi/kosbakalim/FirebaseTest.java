@@ -1,8 +1,11 @@
 package com.kosutakimi.kosbakalim;
 
 import android.content.Context;
+import android.nfc.Tag;
+import android.provider.Settings;
 import android.support.test.InstrumentationRegistry;
 import android.support.test.runner.AndroidJUnit4;
+import android.util.Log;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -16,6 +19,8 @@ import static org.junit.Assert.*;
  */
 @RunWith(AndroidJUnit4.class)
 public class FirebaseTest {
+    private static final String TAG ="FirebaseTest" ;
+
     @Test
     public void useAppContext() throws Exception {
         // Context of the app under test.
@@ -23,6 +28,15 @@ public class FirebaseTest {
 
         assertEquals("com.kosutakimi.kosbakalim", appContext.getPackageName());
         FirebaseBridge newbridge = new FirebaseBridge();
-        newbridge.createUserEP("cmpbilge2@gmail.com","deneme123");
+        System.out.println("Can i see that");
+        newbridge.createUserEP("cmpbilge6@gmail.com","deneme123");
+        if(newbridge.isSignedIn())
+            Log.v(TAG,"Email : "+newbridge.getUserEmail());
+        else{
+            newbridge.sigInEP("cmpbilge6@gmail.com","deneme123");
+            Log.v(TAG,"Email : "+newbridge.getUserEmail());
+
+
+        }
     }
 }
