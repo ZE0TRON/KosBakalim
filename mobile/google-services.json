@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "610985656994",
+    "firebase_url": "https://kosbakalim-922d2.firebaseio.com",
+    "project_id": "kosbakalim-922d2",
+    "storage_bucket": "kosbakalim-922d2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:610985656994:android:5764a7fad38d85fe",
+        "android_client_info": {
+          "package_name": "com.kosutakimi.kosbakalim"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "610985656994-04qnib3pjov5ol4a6h8p7q1sj7bc82n7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiS_PKMc0TLqG6f2fOYCIsmpp1wgwsnCQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
