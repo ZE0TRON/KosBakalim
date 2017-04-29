@@ -1,8 +1,5 @@
 package com.kosutakimi.kosbakalim.yaris;
 
-/**
- * Created by HaaToka on 29.4.2017.
- */
 
 import com.kosutakimi.kosbakalim.user.User;
 
@@ -30,6 +27,9 @@ public class classicMode {
         tutulan verilerden grafik olusturulacak
 
         sonrada yarıs bitti ekranına gidecek kagıtta resmi var
+
+        unit testi ogren ve su lanet olasıca koco poponu kaldir artik vcs den push olmuyo lo :(
+        sddfsf
         */
 
         System.out.println("girdim içerdeyim");
