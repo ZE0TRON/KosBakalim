@@ -7,6 +7,8 @@ import android.support.test.InstrumentationRegistry;
 import android.support.test.runner.AndroidJUnit4;
 import android.util.Log;
 
+import com.kosutakimi.kosbakalim.user.User;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
@@ -29,14 +31,31 @@ public class FirebaseTest {
         assertEquals("com.kosutakimi.kosbakalim", appContext.getPackageName());
         FirebaseBridge newbridge = new FirebaseBridge();
         System.out.println("Can i see that");
+        /*
         newbridge.createUserEP("cmpbilge6@gmail.com","deneme123");
         if(newbridge.isSignedIn())
             Log.v(TAG,"Email : "+newbridge.getUserEmail());
         else{
             newbridge.sigInEP("cmpbilge6@gmail.com","deneme123");
             Log.v(TAG,"Email : "+newbridge.getUserEmail());
-
-
         }
+        */
+
+        //user test
+        User user = new User();
+        System.out.println("is signed(false): " + user.isSigned());
+        //System.out.println("login(false): " + user.login("pillerpilgeler@gmail.com", "123abc")); !!DATABASE IS BROKEN!! (SIGNINEP DONT RETURNING ANYTHING)
+        Log.v(TAG,"Email : "+newbridge.getUserEmail());
+        System.out.println("sign up(false): " + user.signUp("batuhan2@gmail.com", "crazy boy", "123qwe", "123qqw"));
+        System.out.println("sign up(true): " + user.signUp("batuhan3@gmail.com", "crazy boy", "123qwe", "123qwe")); // createUserEP function; excepted : true, returning : false;
+        Log.v(TAG,"Email : "+newbridge.getUserEmail());
+        System.out.println("get nick name(true): " + user.getNickname());
+        user.setHeight(180);
+        System.out.println("get height(180): " + user.getHeight());
+        System.out.println("get gender(heli): " + user.getGender());
+        System.out.println("get weight(-1): " + user.getWeight());
+        user.setGender("male");
+        System.out.println("get gender(male): " + user.getGender());
+
     }
 }
