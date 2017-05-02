@@ -46,8 +46,9 @@ public class FirebaseTest {
         System.out.println("is signed(false): " + user.isSigned());
         //System.out.println("login(false): " + user.login("pillerpilgeler@gmail.com", "123abc")); !!DATABASE IS BROKEN!! (SIGNINEP DONT RETURNING ANYTHING)
         Log.v(TAG,"Email : "+newbridge.getUserEmail());
-        System.out.println("sign up(false): " + user.signUp("batuhan2@gmail.com", "crazy boy", "123qwe", "123qqw"));
-        System.out.println("sign up(true): " + user.signUp("batuhan3@gmail.com", "crazy boy", "123qwe", "123qwe")); // createUserEP function; excepted : true, returning : false;
+        System.out.println("sign up(false): " + user.signUp("batuhan16@gmail.com", "crazy boy", "123qwe", "123qqw"));
+        System.out.println("sign up(true): " + user.signUp("batuhan15@gmail.com", "crazy boy", "123qwe", "123qwe"));// createUserEP function; excepted : true, returning : false;
+       // System.out.println("Original user Create Method : "+ newbridge.createUserEP("batuhan12@gmail.com","123qwe"));
         Log.v(TAG,"Email : "+newbridge.getUserEmail());
         System.out.println("get nick name(true): " + user.getNickname());
         user.setHeight(180);

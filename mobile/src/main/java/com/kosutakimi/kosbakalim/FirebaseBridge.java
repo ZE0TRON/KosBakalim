@@ -69,7 +69,7 @@ public class FirebaseBridge {
                         }
                 });
         while(!isPCompleted){
-
+            continue;
         }
         if(multiUseFlag){
             multiUseFlag=false;
@@ -103,7 +103,7 @@ public class FirebaseBridge {
                     }
                 });
         while(!isPCompleted){
-
+            continue;
         }
         if(multiUseFlag){
             multiUseFlag=false;
