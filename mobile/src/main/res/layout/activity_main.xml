@@ -11,8 +11,28 @@
         android:layout_height="wrap_content"
         android:text="Hello World!"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.207"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.631" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="174dp"
+        android:onClick="quake"
+        android:text="titretBeni"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="43dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="585dp"
+        android:layout_height="wrap_content"
+        android:onClick="salla"
+        android:text="HadiOynayalım"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="314dp" />
 
 </android.support.constraint.ConstraintLayout>

@@ -1,13 +1,25 @@
 package com.kosutakimi.kosbakalim.yaris;
 
+import android.app.Activity;
+import android.content.Context;
+import android.os.Handler;
 import android.os.Vibrator;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
+
+import com.kosutakimi.kosbakalim.R;
 import com.kosutakimi.kosbakalim.user.User;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class classicMode {
+
+public class classicMode extends Activity {
     //daha cok duzeltilecek yer var kodlara bakmayın ne yapacagıma dair hic bir fikrim yok
+
+    Button but2,but3;
+    ImageButton bb;
 
     private boolean isclickedReady(){ //parametre buton1 buton 2 gelsin
         boolean flag1=false,flag2=false;
@@ -22,12 +34,35 @@ public class classicMode {
         return false;
     }
 
-    private void run(User a,User b){
+
+
+    public void anan(){
+
+        but2 = (Button) findViewById(R.id.button2);
+        but2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Handler hand = new Handler();
+                Runnable rnn = new Runnable() {
+                    @Override
+                    public void run() {
+                        but3.setText("okaan");
+                        but3.setText(but3.getVisibility());
+                    }
+                };
+            }
+        });
+
+    }
+
+    private void run2(User a,User b){
 
         long startTime,endTime;
         int A_steps=0,B_steps=0;
         List<Integer> A_Passed = new ArrayList<Integer>(); //bunun için bir queue yaparım cunku
         List<Integer> B_Passed = new ArrayList<Integer>(); //array olusturunca 1024luk acıyor cok hafiza yiyo
+
+
 
 
         /*görsel arayuzdeki butonlar ready  lenmismi onu bekliycek
@@ -95,8 +130,6 @@ public class classicMode {
 
            else{eşleşme ekranına geri dön}
          */
-
-
 
 
         System.out.println("girdim içerdeyim");
