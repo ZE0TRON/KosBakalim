@@ -34,7 +34,18 @@ public class classicMode extends Activity {
         return false;
     }
 
+/**
+ *
+ public void quake(View v){
+ Vibrator vib = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+ vib.vibrate(400);
+ }
 
+ public void salla(View v){
+ MediaPlayer mp=MediaPlayer.create(this,R.raw.cikicikibaba);
+ mp.start();
+ }
+ */
 
     public void anan(){
 
