@@ -1,28 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
     <android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:context="com.kosutakimi.kosbakalim.classicMode">
 
         <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button2"
-            tools:layout_editor_absoluteX="44dp"
-            tools:layout_editor_absoluteY="91dp" />
+            android:id="@+id/cdButton1"
+            android:layout_width="244dp"
+            android:layout_height="50dp"
+            android:text="cdButton2"
+            tools:layout_editor_absoluteX="58dp"
+            tools:layout_editor_absoluteY="260dp" />
 
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button3"
-            tools:layout_editor_absoluteX="200dp"
-            tools:layout_editor_absoluteY="214dp" />
-    </android.support.constraint.ConstraintLayout>
-</LinearLayout>
+</android.support.constraint.ConstraintLayout>
+

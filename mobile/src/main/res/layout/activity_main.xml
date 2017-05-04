@@ -23,16 +23,25 @@
         android:layout_height="174dp"
         android:onClick="quake"
         android:text="titretBeni"
-        tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="43dp" />
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="25dp" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="gotoClassicMode"
+        android:text="classicModageçiş"
+        tools:layout_editor_absoluteX="181dp"
+        tools:layout_editor_absoluteY="240dp" />
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="585dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="salla"
-        android:text="HadiOynayalım"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="314dp" />
+        android:text="hadioyna"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="400dp" />
 
 </android.support.constraint.ConstraintLayout>

@@ -1,7 +1,9 @@
-package com.kosutakimi.kosbakalim.yaris;
+package com.kosutakimi.kosbakalim;
 
+import android.support.v7.app.AppCompatActivity;
 import android.app.Activity;
 import android.content.Context;
+import android.os.Bundle;
 import android.os.Handler;
 import android.os.Vibrator;
 import android.view.View;
@@ -13,13 +15,22 @@ import com.kosutakimi.kosbakalim.user.User;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 
 public class classicMode extends Activity {
-    //daha cok duzeltilecek yer var kodlara bakmayın ne yapacagıma dair hic bir fikrim yok
 
     Button but2,but3;
+
+    //daha cok duzeltilecek yer var kodlara bakmayın ne yapacagıma dair hic bir fikrim yok
     ImageButton bb;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.classic_mode);
+
+    }
 
     private boolean isclickedReady(){ //parametre buton1 buton 2 gelsin
         boolean flag1=false,flag2=false;
@@ -47,26 +58,33 @@ public class classicMode extends Activity {
  }
  */
 
-    public void anan(){
 
-        but2 = (Button) findViewById(R.id.button2);
-        but2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Handler hand = new Handler();
-                Runnable rnn = new Runnable() {
-                    @Override
-                    public void run() {
-                        but3.setText("okaan");
-                        but3.setText(but3.getVisibility());
-                    }
-                };
-            }
-        });
+public void dede(View w){
 
-    }
+    final Button but1 = (Button) findViewById(R.id.cdButton1);
+    but1.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Handler hand = new Handler();
+            Runnable rnn = new Runnable() {
+                @Override
+                public void run() {
+                        /*long start = System.currentTimeMillis();
+                        long end = start + 20*1000; //  seconds * (1000) ms/sec
+                        int i=0;
+                        while(System.currentTimeMillis()<end){
+                            but1.setText(i++);
+                        }*/
+                    Vibrator vib = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+                    vib.vibrate(400);
+                }
+            };
+        }
+    });
+}
 
-    private void run2(User a,User b){
+
+    /*private void run2(User a,User b){
 
         long startTime,endTime;
         int A_steps=0,B_steps=0;
@@ -76,7 +94,7 @@ public class classicMode extends Activity {
 
 
 
-        /*görsel arayuzdeki butonlar ready  lenmismi onu bekliycek
+       görsel arayuzdeki butonlar ready  lenmismi onu bekliycek
         maksimum 20 sn ready e basma hakkın var
         butona 1 kere clicklendikten sonra inaktif duruma geçsin
 
@@ -100,9 +118,9 @@ public class classicMode extends Activity {
 
         unit testi ogren ve su lanet olasıca koco poponu kaldir artik vcs den push olmuyo lo :(
         sddfsf
-        */
 
-        /*if(isclickedReady()){
+
+        if(isclickedReady()){
 
             Vibrator v = (Vibrator) this.context.getSystemService(Context.VIBRATOR_SERVICE);
             v.vibrate(500);// Vibrate for 500 milliseconds  // xml den izin istegi
@@ -140,10 +158,10 @@ public class classicMode extends Activity {
         }
 
            else{eşleşme ekranına geri dön}
-         */
+
 
 
         System.out.println("girdim içerdeyim");
-    }
+    }*/
 
 }
