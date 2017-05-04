@@ -1,10 +1,9 @@
 package com.kosutakimi.kosbakalim;
 
 import android.content.Context;
-import android.media.MediaPlayer;
+import android.os.Bundle;
 import android.os.Vibrator;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
@@ -21,8 +20,9 @@ public class MainActivity extends AppCompatActivity {
         vib.vibrate(400);
     }
 
-    public void salla(View v){
+    /*public void salla(View v){
         MediaPlayer mp=MediaPlayer.create(this,R.raw.cikicikibaba);
         mp.start();
     }
+    */
 }
