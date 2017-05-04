@@ -1,5 +1,7 @@
 package com.kosutakimi.kosbakalim;
 
+import com.kosutakimi.kosbakalim.Sensors.StepCounter;
+
 import android.content.Context;
 import android.content.Intent;
 import android.media.MediaPlayer;
@@ -9,6 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, classicMode.class);
         startActivity(intent);
     }
+    float stem = StepCounter.getSteps();
+
 
 
     /*public void salla(View v){

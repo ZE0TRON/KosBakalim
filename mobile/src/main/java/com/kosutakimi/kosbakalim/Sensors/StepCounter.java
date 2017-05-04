@@ -5,6 +5,8 @@ import com.kosutakimi.kosbakalim.R;
 
 /**
  * Created by oguz on 05.05.2017.
+ *
+ * You can get number of steps with getSteps() function from anywhere
  */
 
 
@@ -23,6 +25,7 @@ public class StepCounter extends MainActivity implements SensorEventListener {
     TextView steps;
     SensorManager sensorManager;
     boolean running = false;
+    static float numberOfSteps;
 
 
     @Override
@@ -43,18 +46,19 @@ public class StepCounter extends MainActivity implements SensorEventListener {
         }
     }
 
+
     @Override
     protected void onPause() {
         super.onPause();
         running = false;
         //Stopping command
-        //sensorManager.unregisterListener(this);
+        sensorManager.unregisterListener(this);
     }
 
     @Override
     public void onSensorChanged(SensorEvent event) {
         if(running){
-            steps.setText(String.valueOf(event.values[0]));
+            numberOfSteps = event.values[0];
 
         }
     }
@@ -64,4 +68,12 @@ public class StepCounter extends MainActivity implements SensorEventListener {
 
     }
 
+    public static float getSteps(){
+        return numberOfSteps;
+    }
+
 }
+
+
+
+
