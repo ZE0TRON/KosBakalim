@@ -26,7 +26,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+
     /*public void salla(View v){
+
+
         MediaPlayer mp=MediaPlayer.create(this,R.raw.cikicikibaba);
         mp.start();
     }
