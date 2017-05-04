@@ -19,12 +19,6 @@ import java.util.Random;
 
 
 public class classicMode extends Activity {
-
-    Button but2,but3;
-
-    //daha cok duzeltilecek yer var kodlara bakmayın ne yapacagıma dair hic bir fikrim yok
-    ImageButton bb;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
