@@ -30,6 +30,6 @@ dependencies {
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'
     compile 'com.google.firebase:firebase-auth:10.2.1'
-
+    compile "com.androidplot:androidplot-core:1.4.2"
 }
 apply plugin: 'com.google.gms.google-services'
