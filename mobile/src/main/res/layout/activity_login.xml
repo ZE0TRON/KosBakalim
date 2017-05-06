@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kosutakimi.kosbakalim.login.login">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="27dp"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="333dp"
+            android:layout_height="40dp"
+            android:layout_alignStart="@+id/sign_in"
+            android:layout_below="@+id/logo"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="333dp"
+            android:layout_height="40dp"
+            android:layout_alignStart="@+id/email"
+            android:layout_below="@+id/email"
+            android:layout_marginTop="22dp"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/sign_in"
+            android:layout_width="333dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/forgot_password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:elevation="0dp"
+            android:text="Sign in" />
+
+        <Button
+            android:id="@+id/with_facabook"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_above="@+id/with_goole"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="5dp"
+            android:text="Sign in with Facebook" />
+
+        <Button
+            android:id="@+id/with_goole"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/with_facabook"
+            android:layout_marginBottom="14dp"
+            android:text="Sign in with Google" />
+
+        <TextView
+            android:id="@+id/forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/sign_in"
+            android:layout_below="@+id/password"
+            android:layout_marginTop="6dp"
+            android:text="Forgot passwrod..." />
+
+        <TextView
+            android:id="@+id/sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/sign_in"
+            android:layout_alignTop="@+id/forgot_password"
+            android:text="Sign up" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
