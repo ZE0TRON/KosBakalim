@@ -1,6 +1,7 @@
 package com.kosutakimi.kosbakalim;
 
 import com.kosutakimi.kosbakalim.Sensors.StepCounter;
+import com.kosutakimi.kosbakalim.login.login;
 
 import android.content.Context;
 import android.content.Intent;
@@ -26,6 +27,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void gotoClassicMode(View v){
         Intent intent = new Intent(this, classicMode.class);
+        startActivity(intent);
+    }
+
+    public void gotologin(View v){
+        Intent intent = new Intent(this, login.class);
         startActivity(intent);
     }
     float stem = StepCounter.getSteps();

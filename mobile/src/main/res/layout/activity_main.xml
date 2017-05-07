@@ -6,42 +6,53 @@
     android:layout_height="match_parent"
     tools:context="com.kosutakimi.kosbakalim.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.207"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.631" />
+    <GridLayout
+        android:layout_width="344dp"
+        android:layout_height="551dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="174dp"
-        android:onClick="quake"
-        android:text="titretBeni"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="25dp" />
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="174dp"
+            android:onClick="quake"
+            android:text="titretBeni"
+            tools:layout_editor_absoluteX="-1058dp"
+            tools:layout_editor_absoluteY="-319dp" />
 
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="gotoClassicMode"
-        android:text="classicModageçiş"
-        tools:layout_editor_absoluteX="181dp"
-        tools:layout_editor_absoluteY="240dp" />
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:onClick="gotoClassicMode"
+            android:text="classicModageçiş"
+            tools:layout_editor_absoluteX="103dp"
+            tools:layout_editor_absoluteY="107dp" />
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="salla"
-        android:text="hadioyna"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="400dp" />
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:onClick="salla"
+            android:text="hadioyna"
+            tools:layout_editor_absoluteX="91dp"
+            tools:layout_editor_absoluteY="29dp" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="8"
+            android:onClick="gotologin"
+            android:text="login"
+            tools:layout_editor_absoluteX="185dp"
+            tools:layout_editor_absoluteY="364dp" />
+    </GridLayout>
 
 </android.support.constraint.ConstraintLayout>
