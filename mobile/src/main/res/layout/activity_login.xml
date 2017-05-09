@@ -164,7 +164,7 @@
                     android:layout_height="25dp"
                     android:layout_marginLeft="30dp"
                     android:layout_weight="1"
-                    android:text="Forgor Password..."
+                    android:text="Forgot Password..."
                     android:textColor="@color/ap_white" />
 
             </LinearLayout>
