@@ -2,9 +2,6 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
-    <color name="signinbutton">#aaff580a</color>
-    <color name="edittext">#c5ffffff</color>
-    <color name="facebookbutton">#e05860f2</color>
-    <color name="googlebutton">#d6ed3e3e</color>
+    <color name="colorAccent">#ede1e5</color>
+    <color name="signinbutton">#beff580a</color>
 </resources>
