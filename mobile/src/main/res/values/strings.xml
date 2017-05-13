@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">KosBakalim</string>
+
+    <string name="title_activity_signup">Signup</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>

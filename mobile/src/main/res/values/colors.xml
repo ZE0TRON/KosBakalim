@@ -4,4 +4,6 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#ede1e5</color>
     <color name="signinbutton">#beff580a</color>
+
+    <color name="black_overlay">#66000000</color>
 </resources>

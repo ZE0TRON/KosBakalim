@@ -25,7 +25,12 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-        <activity android:name=".login.login"></activity>
+        <activity android:name=".login.login" />
+        <activity
+            android:name=".signup.Signup"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_signup"
+            android:theme="@style/FullscreenTheme"></activity>
     </application>
 
 </manifest>
