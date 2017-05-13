@@ -2,6 +2,8 @@ package com.kosutakimi.kosbakalim;
 
 import com.kosutakimi.kosbakalim.Sensors.StepCounter;
 import com.kosutakimi.kosbakalim.login.login;
+import com.kosutakimi.kosbakalim.signup.signup;
+import com.kosutakimi.kosbakalim.splashscreen.splashscreen;
 
 import android.content.Context;
 import android.content.Intent;
@@ -32,6 +34,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void gotologin(View v){
         Intent intent = new Intent(this, login.class);
+        startActivity(intent);
+    }
+    public void gotosignup(View v){
+        Intent intent = new Intent(this, signup.class);
+        startActivity(intent);
+    }
+    public void gotosplash(View v){
+        Intent intent = new Intent(this, splashscreen.class);
         startActivity(intent);
     }
     float stem = StepCounter.getSteps();

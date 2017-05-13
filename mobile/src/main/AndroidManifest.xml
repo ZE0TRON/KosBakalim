@@ -30,7 +30,9 @@
             android:name=".signup.Signup"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_signup"
-            android:theme="@style/FullscreenTheme"></activity>
+            android:theme="@style/FullscreenTheme" />
+        <activity android:name=".signup.signup" />
+        <activity android:name=".splashscreen.splashscreen"></activity>
     </application>
 
 </manifest>
